@@ -18,8 +18,9 @@ const videoConstraints = {
   
     return (
       <div className="row">
-       <div className="col">
-         <div>
+       <div className="col card" >
+         <div style={{marginLeft:'3em'}}>
+         <h5 class="card-title" style={{marginLeft:'7em'}}>Webcam</h5>
         <Webcam
           audio={false}
           ref={webcamRef}
@@ -31,8 +32,9 @@ const videoConstraints = {
         <button margin-left='8em' className='btn-btn-primary' onClick={capture}>Capture photo</button>
         </div>
         
-        <div className="col">
-        {imgSrc && (<div>
+        <div className="col card">
+        <h5 class="card-title" style={{marginLeft:'8em'}}>SnapShot</h5>
+        {imgSrc && (<div style={{ paddingTop:'3.1em', paddingLeft:'3em'} }>
           <img display='block'
             src={imgSrc}
           />
@@ -45,8 +47,6 @@ const videoConstraints = {
           
         </div>
         </div>
-      
-    
     );
   };
   

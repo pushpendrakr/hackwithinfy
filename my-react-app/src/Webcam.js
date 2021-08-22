@@ -17,7 +17,8 @@ const videoConstraints = {
     }, [webcamRef, setImgSrc]);
   
     return (
-      <div className="row">
+      <div> 
+         <div className="row">
        <div className="col card" >
          <div style={{marginLeft:'3em'}}>
          <h5 class="card-title" style={{marginLeft:'7em'}}>Webcam</h5>
@@ -39,14 +40,32 @@ const videoConstraints = {
             src={imgSrc}
           />
           <div align='center'>Age:21</div>
-        <div align='center'>Gender:Male</div></div>
+        <div align='center'>Gender:Male</div>
+        
+        </div>
+        
         )}
         
         </div>
-        <div className='col'>
-          
+                  
         </div>
+        <div class="container">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
+       
+
         </div>
+
     );
   };
   

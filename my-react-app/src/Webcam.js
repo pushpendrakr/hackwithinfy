@@ -27,7 +27,7 @@ const videoConstraints = {
           height="400"
         />
        
-        <button onClick={capture}>Capture photo</button>
+        <button className='btn-btn-primary' onClick={capture}>Capture photo</button>
         <div>
         {imgSrc && (
           <img display='block'
@@ -38,5 +38,4 @@ const videoConstraints = {
       </>
     );
   };
-  
   
